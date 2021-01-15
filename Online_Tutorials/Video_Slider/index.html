@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Video Slider</title>
+  </head>
+  <body>
+    <section>
+      <video class="slider active" autoplay muted loop>
+        <source src="vid1.mp4" type="video/mp4" />
+      </video>
+      <video class="slider inactive" autoplay muted loop>
+        <source src="vid1.mp4" type="video/mp4" />
+      </video>
+      <ul class="navigation">
+        <li onclick="videoUrl('vid1.mp4');"><img src="img1.png" alt="1" /></li>
+        <li onclick="videoUrl('vid2.mp4');"><img src="img2.png" alt="2" /></li>
+        <li onclick="videoUrl('vid3.mp4');"><img src="img3.png" alt="3" /></li>
+        <li onclick="videoUrl('vid4.mp4');"><img src="img2.png" alt="4" /></li>
+      </ul>
+    </section>
+    <script>
+      function videoUrl(url) {
+        const sliders = document.querySelectorAll(".slider");
+        sliders.forEach((slider) => {
+          slider.classList.toggle("active");
+          slider.classList.toggle("inactive");
+          slider.src = slider.className === "slider active" ? url : slider.src;
+          console.log(slider.className);
+        });
+      }
+    </script>
+  </body>
+</html>

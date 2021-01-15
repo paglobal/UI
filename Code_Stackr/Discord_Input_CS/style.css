@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+  background: #040404;
+}
+
+label {
+  position: relative;
+}
+
+label svg {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #393838;
+  transition: color 0.2s ease;
+}
+
+/*change the color of the svg when a child has focus (input)*/
+label:focus-within svg {
+  color: #f5f8ff;
+}
+
+label input {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #f5f8ff;
+
+  background: rgba(245, 248, 255, 0.025);
+
+  padding: 1rem 1.4rem 1rem 3.2rem;
+  min-width: 12rem;
+
+  outline: none;
+  border: 0.15rem solid transparent;
+  border-radius: 0.4rem;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/*change border color on hover*/
+label:hover input {
+  border-color: rgba(245, 248, 255, 0.02);
+}
+
+/*change the color of our placeholder*/
+label input::placeholder {
+  color: #393838;
+  user-select: none;
+}
+
+/*change border color and add box-shadow on focus*/
+label input:focus {
+  border-color: #ff4574;
+  box-shadow: 0 0 0 0.4rem rgba(255, 71, 84, 0.15);
+}

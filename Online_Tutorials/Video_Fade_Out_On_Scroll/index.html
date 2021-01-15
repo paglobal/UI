@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fadeout Background On Scroll</title>
+  </head>
+  <body>
+    <section>
+      <video src="vid1.mp4" autoplay muted loop></video>
+    </section>
+    <section>
+      <div class="content">
+        <h2>Fadeout Video Background On Scroll</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, libero
+          ut consectetur veritatis harum odio. Culpa distinctio omnis quae
+          tempore minima? Harum repellat facere blanditiis at aut quam dolores
+          soluta nulla quo magnam doloremque a accusamus et, nihil neque quidem
+          suscipit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aspernatur eos architecto est ipsam minima aut odio cupiditate hic
+          vero asperiores? Dolorum eos neque necessitatibus pariatur soluta,
+          asperiores et quasi aliquid eius quos fugiat, itaque recusandae
+          aperiam beatae illum animi culpa fuga, dolorem repellendus magnam
+          distinctio quis. Deleniti molestiae veritatis tempora magnam vero
+          dolor eaque! Porro sed dolor, nostrum expedita ullam fugiat similique
+          at itaque? Quas modi praesentium culpa aperiam quo! Dolor nobis
+          eligendi inventore vero, tempore possimus deserunt praesentium
+          doloremque, quae corrupti enim illum laboriosam officiis aliquid. Eum
+          obcaecati commodi ab tempora porro voluptatum laudantium animi
+          exercitationem necessitatibus ad quos, corrupti, provident enim nobis?
+          Distinctio nesciunt possimus repellat. Assumenda labore facilis atque
+          dolore ea laborum, itaque fuga totam laudantium id quisquam
+          praesentium ipsa quaerat rem, nostrum accusantium, perferendis alias
+          nemo deleniti eum inventore qui est voluptatum? Cum porro totam
+          exercitationem accusantium dolorum, eius ratione eveniet dolor nobis
+          dolore omnis tempora possimus harum corrupti, suscipit culpa! Dolor
+          alias tenetur autem vel at sint quod eum laboriosam, similique velit
+          sequi inventore ad explicabo est iste aliquid ex pariatur tempora
+          harum aut commodi obcaecati soluta? Eveniet debitis velit repellendus,
+          aliquam molestias inventore exercitationem adipisci cum quo
+          perspiciatis at tempora, doloremque nulla soluta a! voluptate, itaque
+          repellendus voluptatem iure fugit sit quos excepturi! Officia quod
+          asperiores voluptas natus distinctio maxime, quaerat corrupti delectus
+          veniam cupiditate doloribus ipsa non tenetur, mollitia similique,
+          eveniet fugiat quia qui ducimus? Iusto voluptatibus consequatur quod
+          aut nulla dolorem tempore fugit modi? Maiores tempore illum cupiditate
+          aliquid odio delectus alias nobis?Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Labore eligendi temporibus nulla?
+          Reiciendis pariatur dicta eius cupiditate esse laborum iure, nobis
+          impedit architecto officia laudantium eveniet, non odit dolor?
+          Tempore, unde error! Numquam nam quidem facilis delectus molestias
+          harum accusamus esse. Eum veritatis id autem ex ratione aspernatur
+          voluptatibus, quae ipsum obcaecati! Est illo ipsam non error nostrum
+          molestiae vero, provident aliquid minima sunt suscipit unde iste
+          delectus, quos quisquam. Sint doloremque repellat rem quae earum fuga
+          voluptatum nemo esse enim quidem numquam architecto corrupti,
+          reprehenderit, aliquam harum provident? Iure, quo. Repellendus maxime
+          dolores nostrum perspiciatis sunt quaerat odio qui perferendis est,
+          aut delectus possimus in saepe quo, quia magni quam, iste mollitia
+          soluta earum maiores? Facilis explicabo, quasi ab repellendus atque
+          tempore quidem nihil ut quisquam, earum possimus? Blanditiis
+          perferendis, officia nemo sed doloremque quia, vitae quae qui at
+          dolore itaque enim nulla quibusdam voluptates hic fugiat aspernatur
+          repellat animi quam accusantium quod delectus temporibus. Mollitia
+          placeat illum veritatis sint aliquid molestias iure, reprehenderit
+          praesentium ipsa ullam alias neque a incidunt voluptas quae nisi nemo
+          atque facere culpa facilis deleniti, veniam deserunt minus. Porro
+          deserunt maiores, facere cupiditate tempora quam beatae doloribus
+          veniam praesentium, nulla consectetur soluta accusamus blanditiis!
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dicta
+          perspiciatis delectus consectetur laborum veniam magni, esse
+          laudantium molestias tempora iure illo, omnis est voluptates,
+          excepturi alias corrupti magnam quasi? Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Quidem, hic sit aperiam excepturi
+          incidunt voluptatem. Aperiam exercitationem fuga esse odio in dicta a
+          eos accusantium illum! Eius quam aliquid illum deleniti quidem
+          dignissimos, ad doloremque ea impedit repellendus laboriosam quis
+          error quod harum. Ipsa fugiat ipsam culpa. Adipisci ducimus,
+          perferendis dolor nisi, eligendi nam, sapiente aut officiis velit et
+          eveniet accusamus expedita voluptatem repellat repellendus sunt sit
+          laborum deserunt?
+        </p>
+      </div>
+    </section>
+    <script>
+      let video = document.querySelector("video");
+      window.addEventListener("scroll", function () {
+        let value = 1 + window.scrollY / -600;
+        video.style.opacity = value;
+      });
+    </script>
+  </body>
+</html>

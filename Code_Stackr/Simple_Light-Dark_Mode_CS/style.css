@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #f0f0f0;
+  --light-grey: #e4e4e4;
+  --black: #111111;
+  --dark-grey: #272727;
+  --bg: var(--white);
+  --txt: var(--black);
+  --dark-opacity: 0;
+  --light-opacity: 1;
+}
+
+.content {
+  background-color: var(--bg);
+  color: var(--txt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background 0.3s ease;
+}
+
+.ball,
+.image {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
